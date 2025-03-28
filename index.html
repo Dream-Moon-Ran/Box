@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> </title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+
+<body>
+<div id="Day/Night-container">
+    <button id="Day/Night" class="dayAndNight-button">Day</button>
+</div>
+<div class="form-container">
+    <h1>Registration form</h1>
+    <form action="/reg-data" method="post">
+        <div class="form-input" id="name-input-container">
+            <label for="user-name-input">Enter your name</label>
+            <input type="text" id="user-name-input" placeholder="Name" name="username">
+        </div>
+        <div class="form-input" id= "pass_input_container">
+            <label for="password-input">Enter your password</label>
+            <input type="password" id="password-input" placeholder="Password" name="password">
+        </div>
+        <div class="form-input">
+            <label for="user-type-input">Select your role</label>
+            <select id="user-type-input">
+                <option value ="0">Admin</option>
+                <option value ="1">User</option>
+                <option value ="2">Moderator</option>
+            </select>
+        </div>
+        <button id="submit-input" type="submit">Submit button</button>
+    </form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
